@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "70875283018",
+    "project_id": "tmdb-97c46",
+    "storage_bucket": "tmdb-97c46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70875283018:android:f2919863fec68d2f8270b3",
+        "android_client_info": {
+          "package_name": "com.invenics.tmdb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70875283018-jvdnfrrgh91jcl0c2o9m31dtip2psts6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7avlYB1pdTw8wD_GKqVYd-2niaodGQzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70875283018-jvdnfrrgh91jcl0c2o9m31dtip2psts6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "70875283018-ph6qva2ql8hfcvcocb9ei3pci8j4ovlv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.invenics.tmdb"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
