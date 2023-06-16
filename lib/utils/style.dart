@@ -54,3 +54,15 @@ const dialogBodyTextStyle = TextStyle(
   fontSize: 18,
   color: kColorNavyBlue,
 );
+const headingStyle = TextStyle(
+  fontFamily: 'Nunito-Regular',
+  fontWeight: FontWeight.w700,
+  fontSize: 24,
+  color: Colors.black,
+);
+const filmNameTextStyle = TextStyle(
+  fontFamily: 'Nunito-Regular',
+  fontWeight: FontWeight.w500,
+  fontSize: 18,
+  color: Colors.black,
+);

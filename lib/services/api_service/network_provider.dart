@@ -2,16 +2,10 @@
 
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:tmdb/utils/widgets/display_message_dialog.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 import '../../helper/config.dart';
-import '../../main.dart';
 import '../../models/network_template/api_response.dart';
-import '../../utils/strings.dart';
-
-
 import 'network_exceptions.dart';
 
 enum RequestType { get, post, put, delete }
@@ -113,7 +107,7 @@ class NetworkProvider {
         ),
       );
     }
-    return null;
+
   }
 
   Future _addAuthInterceptor() async {

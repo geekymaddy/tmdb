@@ -44,7 +44,8 @@ class _LandingState extends State<LandingPage> {
         if (state is MemberArea) {
           Navigator.push(context, createSignInPageRoute());
         } else if (state is GuestArea) {
-          Navigator.push(context, createSignInPageRoute());
+          Navigator.pushReplacement(context, createHomePageRoute(false));
+
         }
       },
       child: BlocBuilder<LandingPageBloc, LandingPageState>(
@@ -145,17 +146,17 @@ class _LandingState extends State<LandingPage> {
                         RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
                     ))),
-                child: Row(
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Icon(
+                    Icon(
                       Icons.person,
                       color: Colors.white,
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
+                      children: [
                         Text(Strings.getting_started_member,
                             style: TextStyle(
                                 color: Colors.white,
@@ -168,7 +169,7 @@ class _LandingState extends State<LandingPage> {
                                 fontWeight: FontWeight.bold)),
                       ],
                     ),
-                    const Icon(
+                    Icon(
                       Icons.arrow_forward_ios,
                       color: Colors.white,
                     ),
@@ -200,17 +201,17 @@ class _LandingState extends State<LandingPage> {
                         RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
                     ))),
-                child: Row(
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Icon(
+                    Icon(
                       Icons.person,
                       color: Colors.black54,
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
+                      children: [
                         Text(Strings.getting_started_guest,
                             style: TextStyle(
                                 color: Colors.black54,
@@ -223,7 +224,7 @@ class _LandingState extends State<LandingPage> {
                                 fontWeight: FontWeight.bold)),
                       ],
                     ),
-                    const Icon(Icons.arrow_forward_ios, color: Colors.black54),
+                    Icon(Icons.arrow_forward_ios, color: Colors.black54),
                   ],
                 ),
               ),

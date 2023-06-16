@@ -58,7 +58,7 @@ class SignInPageState extends State<SignInPage> {
             context: context,
             message: state.message ?? '',
           );
-          Navigator.pushReplacement(context, createHomePageRoute());
+          Navigator.pushReplacement(context, createHomePageRoute(true));
         }
       },
       child: BlocBuilder<SignInBloc, SignInState>(builder: (context, state) {

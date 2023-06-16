@@ -35,7 +35,7 @@ Route createSignUpPageRoute() {
   );
 }
 
-Route createHomePageRoute() {
+Route createHomePageRoute(bool isLogin) {
   return PageTransition(
     type: PageTransitionType.leftToRight,
     duration: const Duration(milliseconds: animationDuration),
@@ -43,7 +43,9 @@ Route createHomePageRoute() {
       create: (context) => HomePageBloc(
         HomeInitial(),
       ),
-      child: const HomePage(),
+      child: HomePage(
+        isLogin: isLogin,
+      ),
     ),
   );
 }
